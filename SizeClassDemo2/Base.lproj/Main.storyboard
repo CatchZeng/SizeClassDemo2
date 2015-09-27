@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽：紧凑   高：常规" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-ei-wK2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽：常规   高：常规" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C65-bj-Rdi">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽：紧凑   高：Any" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qH-r3-ZAW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C65-bj-Rdi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HIO-w4-znI"/>
+                            <constraint firstItem="fwg-ei-wK2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QLM-k1-yOq"/>
+                            <constraint firstItem="1qH-r3-ZAW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZ5-bx-ZKx"/>
+                            <constraint firstItem="C65-bj-Rdi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dOR-bu-key"/>
+                            <constraint firstItem="1qH-r3-ZAW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qem-6D-n9z"/>
+                            <constraint firstItem="fwg-ei-wK2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rpN-sd-2ef"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fwg-ei-wK2"/>
+                                <exclude reference="C65-bj-Rdi"/>
+                                <exclude reference="1qH-r3-ZAW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="HIO-w4-znI"/>
+                                <exclude reference="dOR-bu-key"/>
+                                <exclude reference="QLM-k1-yOq"/>
+                                <exclude reference="rpN-sd-2ef"/>
+                                <exclude reference="YZ5-bx-ZKx"/>
+                                <exclude reference="qem-6D-n9z"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1qH-r3-ZAW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="YZ5-bx-ZKx"/>
+                                <include reference="qem-6D-n9z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fwg-ei-wK2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QLM-k1-yOq"/>
+                                <include reference="rpN-sd-2ef"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="C65-bj-Rdi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="HIO-w4-znI"/>
+                                <include reference="dOR-bu-key"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625.5" y="625"/>
+        </scene>
+    </scenes>
+</document>
